@@ -1,4 +1,4 @@
-
+readme_content = """
 <p align="center">
   <img src="./.github/assets/banner.png" height="200" alt="Price Parser Banner" />
 </p>
@@ -136,3 +136,10 @@ poetry install
 \`\`\`
 
 Happy Parsing! 💰
+"""
+
+# Save the README content to a file
+with open("README.md", "w", encoding="utf-8") as file:
+    file.write(readme_content)
+
+print("README.md file has been generated successfully.")
