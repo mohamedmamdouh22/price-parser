@@ -26,9 +26,9 @@ Price Parser is a Python library that makes it simple to extract prices from tex
 ## Setup and Installation
 
 Install the library via pip:
-\`\`\`bash
+```bash
 pip install price-parser
-\`\`\`
+```
 
 ---
 
