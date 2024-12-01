@@ -27,7 +27,7 @@
 Install the library via pip:
 
 ```bash
-pip install price-parser
+pip install price-parser-reworkd
 ```
 
 ---
