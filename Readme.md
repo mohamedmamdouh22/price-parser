@@ -46,26 +46,26 @@ pip install price-parser
 ### ParserTypePrice
 Extract the numeric price value from a string as a **float**.
 
-\`\`\`python
+```python
 from price_parser import ParserTypePrice
 
 price = ParserTypePrice(price_string="$19.99")
 print(price.value)  # Output: 19.99
-\`\`\`
+```
 
 ---
 
 ### ParserTypeCurrency
 Extract both the numeric price value and the currency details (symbol and name).
 
-\`\`\`python
+```python
 from price_parser import ParserTypeCurrency
 
 price_info = ParserTypeCurrency(price_string="$19.99")
 print(price_info.value)      # Output: 19.99
 print(price_info.currency)   # Output: "USD"
 print(price_info.symbol)     # Output: "$"
-\`\`\`
+```
 
 ---
 
@@ -73,44 +73,44 @@ print(price_info.symbol)     # Output: "$"
 
 ### Single Price Extraction
 Parse a single price from a string:
-\`\`\`python
+```python
 from price_parser import ParserTypePrice
 
 price = ParserTypePrice(price_string="€49,99")
 print(price.value)  # Output: 49.99
-\`\`\`
+```
 
 ### Full Price Details
 Extract both the price value and currency details:
-\`\`\`python
+```python
 from price_parser import ParserTypeCurrency
 
 price_info = ParserTypeCurrency(price_string="₹1,500")
 print(price_info.value)      # Output: 1500.0
 print(price_info.currency)   # Output: "INR"
 print(price_info.symbol)     # Output: "₹"
-\`\`\`
+```
 
 ### E-Commerce Data Processing
 Ideal for processing pricing data from product listings.
 
-\`\`\`python
+```python
 from price_parser import ParserTypeCurrency
 
 products = ["$19.99", "€15.50", "₹1200"]
 for product in products:
     info = ParserTypeCurrency(price_string=product)
     print(f"Price: {info.value}, Currency: {info.currency}, Symbol: {info.symbol}")
-\`\`\`
+```
 
 ---
 
 ## Tests
 
 Run unit tests to verify functionality:
-\`\`\`bash
+```bash
 pytest
-\`\`\`
+```
 
 ---
 
@@ -129,10 +129,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Running the Package
 
 You can use the library directly in your Python projects. For development, clone the repository and use Poetry to manage dependencies:
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/price-parser.git
 cd price-parser
 poetry install
-\`\`\`
+```
 
 Happy Parsing! 💰
