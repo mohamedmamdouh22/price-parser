@@ -130,7 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 You can use the library directly in your Python projects. For development, clone the repository and use Poetry to manage dependencies:
 ```bash
-git clone https://github.com/yourusername/price-parser.git
+git clone https://github.com/mohamedmamdouh22/price-parser.git
 cd price-parser
 poetry install
 ```
