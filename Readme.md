@@ -6,7 +6,7 @@
 
 # Price Parser
 
-`Price Parser` is a Python library that provides Pydantic-compatible data types for parsing and extracting price-related information from strings. It allows you to effortlessly handle numeric values, currency symbols, and currency names in a structured and validated way using Pydantic models.
+`Price Parser` is a Python library created by reworkd team that provides Pydantic-compatible data types for parsing and extracting price-related information from strings. It allows you to effortlessly handle numeric values, currency symbols, and currency names in a structured and validated way using Pydantic models.
 
 ---
 
