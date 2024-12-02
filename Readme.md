@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="./.github/assets/banner.png" height="200" alt="Price Parser Banner" />
+  <img src="logos/logo.webp" height="200" alt="Price Parser Banner" />
 </p>
 
-<h3 align="center">💰 Price Parser: Extract Prices with Ease 💰</h3>
+<h3 align="center">💰 Price Parser Reworkd: Extract Prices with Ease 💰</h3>
 
-# Price Parser
+# Price Parser Reworkd
 
 `Price Parser` is a Python library created by reworkd team that provides Pydantic-compatible data types for parsing and extracting price-related information from strings. It allows you to effortlessly handle numeric values, currency symbols, and currency names in a structured and validated way using Pydantic models.
 
