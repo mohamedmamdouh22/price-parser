@@ -91,7 +91,7 @@ price_info = PriceModel(price="$19.99")
 print(price_info.price)  # Output: 19.99
 
 # Example 2: Parse numeric price from an integer
-price_info = PriceModel(price=1500)
+price_info = PriceModel(price='€1.500')
 print(price_info.price)  # Output: 1500.0
 
 # Example 3: Parse numeric price from a float
