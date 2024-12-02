@@ -43,19 +43,6 @@ pip install price-parser-reworkd
 
 ## Usage
 
-### ParserTypePrice
-
-Extract the numeric price value from a string as a **float**.
-
-```python
-from price_parser import ParserTypePrice
-
-price = ParserTypePrice(price_string="$19.99")
-print(price.value)  # Output: 19.99
-```
-
----
-
 ### ParserTypeCurrency
 
 Extract both the numeric price value and the currency details (symbol and name).
