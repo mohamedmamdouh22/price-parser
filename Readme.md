@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="logos/logo-modified.png" height="200" alt="Price Parser Banner" />
-</p>
+![Price Parser Logo](https://raw.githubusercontent.com/mohamedmamdouh22/price-parser/main/logos/logo-modified.png)
 
 <h3 align="center">💰 Price Parser Reworkd: Extract Prices with Ease 💰</h3>
 
