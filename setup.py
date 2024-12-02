@@ -14,7 +14,7 @@ setup(
     description="A simple price parser for extracting currency and value from strings (currently used as a Pydantic datatype only).",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mohamedmamdouh22/price-parser-reworkd",
+    url="https://github.com/mohamedmamdouh22/price-parser.git",
     packages=find_packages(),
     install_requires=["pydantic", "pytest"],
     classifiers=[
