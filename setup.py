@@ -8,7 +8,7 @@ if os.path.exists("README.md"):
 
 setup(
     name="price-parser-reworkd",
-    version="0.1.1",
+    version="0.1.2",
     author="Mohamed Khalil",
     author_email="mkhalil@reworkd.ai",
     description="A simple price parser for extracting currency and value from strings (currently used as a Pydantic datatype only).",
