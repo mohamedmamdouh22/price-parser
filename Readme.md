@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logos/logo.webp" height="200" alt="Price Parser Banner" />
+  <img src="logos/logo-modified.png" height="200" alt="Price Parser Banner" />
 </p>
 
 <h3 align="center">💰 Price Parser Reworkd: Extract Prices with Ease 💰</h3>
