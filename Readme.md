@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mohamedmamdouh22/price-parser/main/logos/logo-modified.png" alt="Price Parser Logo" width="600"/>
+  <img src="https://raw.githubusercontent.com/mohamedmamdouh22/price-parser/main/logos/logo-modified.png" alt="Price Parser Logo" width="400"/>
 </p>
 
 <h3 align="center">💰 Price Parser Reworkd: Extract Prices with Ease 💰</h3>
