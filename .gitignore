@@ -9,6 +9,7 @@ test.py
 # Distribution / packaging
 .Python
 build/
+.ruff_cache/
 develop-eggs/
 dist/
 downloads/
