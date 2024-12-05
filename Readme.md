@@ -70,41 +70,10 @@ print(price_info.price)
 # Output: {'currency': 'EUR', 'currency_symbol': '€', 'amount': 49.99}
 
 ```
-
 ---
 
 ## Example Use Cases
 
-### Single Price Extraction
-
-Parse a single price from a string:
-
-```python
-from pydantic import BaseModel
-from price_parser import ParserTypePrice
-
-class PriceModel(BaseModel):
-    price: ParserTypePrice()
-
-# Example 1: Parse numeric price from a string
-price_info = PriceModel(price="$19.99")
-print(price_info.price)  # Output: 19.99
-
-# Example 2: Parse numeric price from an integer
-price_info = PriceModel(price='€1.500')
-print(price_info.price)  # Output: 1500.0
-
-# Example 3: Parse numeric price from a float
-price_info = PriceModel(price=99.99)
-print(price_info.price)  # Output: 99.99
-
-# Example 4: Handle invalid or empty input
-try:
-    price_info = PriceModel(price="invalid input")
-except ValueError as e:
-    print(e)  # Output: ValueError with explanation
-
-```
 
 ### Full Price Details
 
