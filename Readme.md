@@ -72,10 +72,10 @@ print(price_info.price)
 # Output: {'currency': 'EUR', 'currency_symbol': '€', 'amount': 49.99}
 
 ```
+
 ---
 
 ## Example Use Cases
-
 
 ### Full Price Details
 
@@ -83,22 +83,22 @@ Extract both the price value and currency details:
 
 ```python
 from pydantic import BaseModel
-from price_parser import ParserTypePrice, ParserTypeCurrency
+from price_parser import ParserTypeCurrency
 
 class CombinedModel(BaseModel):
-    numeric_price: ParserTypePrice()
-    full_price_details: ParserTypeCurrency
+    full_price_details_USD: ParserTypeCurrency
+    full_price_details_EUR: ParserTypeCurrency
 
 # Input data
 data = {
-    "numeric_price": "$19.99",
-    "full_price_details": "USD 19.99",
+    "full_price_details_USD": "USD 19.99",
+    "full_price_details_EUR": "€1.234",
 }
 
 # Parse the data
 price_info = CombinedModel(**data)
-print(price_info.numeric_price)       # Output: 19.99
-print(price_info.full_price_details)  # Output: {'currency': 'USD', 'currency_symbol': '$', 'amount': 19.99}
+print(price_info.full_price_details_USD)   # Output: {'currency': 'USD', 'currency_symbol': '$', 'amount': 19.99}
+print(price_info.full_price_details_EUR)  # Output: {'currency': 'EUR', 'currency_symbol': '€', 'amount': 1234.0}
 ```
 
 ### E-Commerce Data Processing
