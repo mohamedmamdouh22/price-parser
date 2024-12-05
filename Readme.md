@@ -35,9 +35,11 @@ pip install price-parser-reworkd
 ## Features
 
 - Extract numeric price values from strings.
+- Support for more than 60 currencies
 - Detect currency symbols and convert them into readable currency names.
 - Built on **Pydantic** for easy integration with modern Python projects.
 - Lightweight and production-ready.
+- Can handle price unavailable phrases
 
 ---
 
