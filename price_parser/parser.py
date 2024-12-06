@@ -17,9 +17,7 @@ class CurrencyParser:
     ) -> dict[str, Optional[Union[str, float]]]:
         if isinstance(value, (float, int)):
             return {"currency": None, "currency_symbol": None, "amount": float(value)}
-        symbol = None
-        currency_name = None
-        amount = None
+        symbol = currency_name = amount = None
         if value is not None:
             value = str(value).strip()
             if value.lower() in price_not_available_phrases:
