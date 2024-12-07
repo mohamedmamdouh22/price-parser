@@ -81,46 +81,46 @@ class _TestModel(BaseModel):
         ("B/. 123.45", {"currency": "PAB", "currency_symbol": "B/.", "amount": 123.45}),
         (
             "Price Not Available",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
         (
             "Unavailable Price",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
         (
             "Price Upon Request",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
         (
             "Contact for Price",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
         (
             "Request a Quote",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
-        ("TDB", {"currency": None, "currency_symbol": None, "amount": None}),
-        ("N/A", {"currency": None, "currency_symbol": None, "amount": None}),
+        ("TDB", None),
+        ("N/A", None),
         (
             "Price Not Disclosed",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
-        ("Out of Stock", {"currency": None, "currency_symbol": None, "amount": None}),
-        ("Sold Out", {"currency": None, "currency_symbol": None, "amount": None}),
+        ("Out of Stock", None),
+        ("Sold Out", None),
         (
             "Pricing Not Provided",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
-        ("Not Priced", {"currency": None, "currency_symbol": None, "amount": None}),
+        ("Not Priced", None),
         (
             "Currently Unavailable",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
         (
             "Ask for Pricing",
-            {"currency": None, "currency_symbol": None, "amount": None},
+            None,
         ),
-        (None, {"currency": None, "currency_symbol": None, "amount": None}),
+        (None, None),
     ],
 )
 def test_currency_success(input_value, expected_output):
@@ -146,15 +146,15 @@ def test_currency_success(input_value, expected_output):
         "$",
         "1,234.56.78",
         "123,456,12",
-        "$$",  # Invalid double symbol
-        "1,2,3",  # Incorrectly formatted number
-        "abc$",  # Non-numeric value with symbol
-        "Twelve Dollars",  # Spelled-out amount
-        "1 000,00",  # Improperly spaced number
-        "NaN",  # Non-numeric representation
-        "INF",  # Infinity value
-        "-INF",  # Negative infinity
-        "OnlySymbol$",  # Missing value
+        "$$",
+        "1,2,3",
+        "abc$",
+        "Twelve Dollars",
+        "1 000,00",
+        "NaN",
+        "INF",
+        "-INF",
+        "OnlySymbol$",
         "",
         {},
         [],
